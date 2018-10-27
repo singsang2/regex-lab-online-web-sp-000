@@ -16,7 +16,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.match(/\W?\d+\W?\d+\W?\W?\d+\W?/) == nil ? false : true
+  phone.match(/\W?\d{3}\W?\d{3}\W?\W?\d{4}\W?/) == nil ? false : true
 end
 
 puts words_starting_with_un_and_ending_with_ing("unassuming ambiguous understanding pomp circumstance uninteresting uncompromising grouchy corollary")
